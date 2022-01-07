@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.asj.ui.Fragments.HomeFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createNotesFragment"
+            app:destination="@id/createNotesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_developerFragment"
+            app:destination="@id/developerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNotesFragment"
+        android:name="com.example.asj.ui.Fragments.CreateNotesFragment"
+        android:label="Add New Notes"
+        tools:layout="@layout/fragment_create_notes" >
+        <action
+            android:id="@+id/action_createNotesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.asj.ui.Fragments.EditFragment"
+        android:label="Edit Notes"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="data"
+            app:argType="com.example.asj.Model.Notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/developerFragment"
+        android:name="com.example.asj.ui.Fragments.DeveloperFragment"
+        android:label="fragment_developer"
+        tools:layout="@layout/fragment_developer" >
+        <action
+            android:id="@+id/action_developerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.Fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvAllNotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="26dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAboutDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="26dp"
+            android:src="@drawable/ic_developer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/allNotes"
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_filter"
+            android:src="@drawable/ic_filter"
+            app:layout_constraintBottom_toTopOf="@+id/rcvAllNotes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/filter_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:textSize="18sp"
+            android:background="@drawable/btn_filter_shape"
+            app:layout_constraintBottom_toTopOf="@+id/rcvAllNotes"
+            app:layout_constraintEnd_toStartOf="@+id/filter_medium"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:textStyle="bold"
+            android:textColor="#E64A3F"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            app:layout_constraintStart_toEndOf="@+id/allNotes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/filter_medium"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="#FFEB3B"
+            android:background="@drawable/btn_filter_shape"
+            android:textSize="18sp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/rcvAllNotes"
+            app:layout_constraintEnd_toStartOf="@+id/filter_low"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/filter_high"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/filter_low"
+            android:layout_width="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:background="@drawable/btn_filter_shape"
+            android:layout_height="wrap_content"
+            android:text="Low"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/rcvAllNotes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/filter_medium"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
