@@ -25,6 +25,6 @@ This project proposed a "Notes App" to keep notes of your important things. This
 * LiveData, ViewModel and RoomDatabase : We also using LiveData to update the state of fragments and with the hepl of RoomDatabase we update the note whenever user edit the note or create or delete notes.We use ViewModel to survive data whenever screen rotate.
 
 **Application Link and Future Scope**
-The app is currently in the Alpha testing phase with Bakhtiyarpur College of Engineering with a limited no. of users, You can access the app from : 
+The app is currently in the Alpha testing phase with Bakhtiyarpur College of Engineering with a limited no. of users, You can access the app from : https://github.com/Abhishek28042001/Android-Study-Jam/releases
 Once the app is fully tested in Bakhtiyarpur College of Engineering, we plan to talk to neighboring colleges and schools also to propose this app idea and collaborate with them.
 Also we are planning to include time table feature and class attendance feature in our upcoming updates.
