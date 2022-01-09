@@ -9,6 +9,9 @@ Now-a-days everything has went online. People face problem in remembering their 
 **Proposed Solution:**
 
 This project proposed a "Notes App" to keep notes of your important things. This application used room database (local database) to store all the information given by user. In this application, user can note down their importance tasks as well this app is also use as time tracking app by note down tasks and time of the tasks.This application is used by anyone.
+
+**Screenshots :**
+
 ![Screenshot_1641556949](https://user-images.githubusercontent.com/94926299/148589510-30dd1dab-2911-4e24-b6c2-08699e975c2b.png) 
 ![Screenshot_1641569325](https://user-images.githubusercontent.com/94926299/148589607-98415f46-7596-40de-b1fb-938c8233289a.png)
 ![Screenshot_1641569331](https://user-images.githubusercontent.com/94926299/148589719-a4fbe493-2f98-4e2d-92a0-b48797d9c95e.png)
@@ -19,9 +22,9 @@ This project proposed a "Notes App" to keep notes of your important things. This
 **Functionality & Concepts used :**
 * This app has very simple and interactive inface which help people to create, edit and see their notes.
 * **Constraint Layout** : Most of the activities in the app uses a flexible constraint layout, which is easy to handle for different screen sizes.
-* Simple and Easy view design : This app has a search bar which help people to search their notes by simple searching the word that they remember. 
-* Recycler View : This app has a recyclerView to show all the notes.
-* LiveData, ViewModel and RoomDatabase : We also using LiveData to update the state of fragments and with the hepl of RoomDatabase we update the note whenever user edit the note or create or delete notes.We use ViewModel to survive data whenever screen rotate.
+* **Simple and Easy view design** : This app has a search bar which help people to search their notes by simple searching the word that they remember. 
+* **Recycler View** : This app has a recyclerView to show all the notes.
+* **LiveData, ViewModel and RoomDatabase** : We also using LiveData to update the state of fragments and with the hepl of RoomDatabase we update the note whenever user edit the note or create or delete notes.We use ViewModel to survive data whenever screen rotate.
 
 **Application Link and Future Scope :**
 
